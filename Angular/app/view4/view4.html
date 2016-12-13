@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <div ng-app="myApp.view4">
+                <div ng-controller="View4Ctrl">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h4 class="text-center">AngularJS Filter - Static Languages</h4>
+                            <p><strong>Original:</strong></p>
+                            <ul class="list">
+                                <li ng-repeat="lang in example1">{{lang.name}}</li>
+                            </ul>
+                            <p><strong>Static Language Filter:</strong></p>
+                            <ul class="list">
+                                <li ng-repeat="lang in example1 | staticLanguage">{{lang.name}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
